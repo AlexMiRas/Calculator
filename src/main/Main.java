@@ -1,11 +1,19 @@
 package main;
 
 import java.util.Map;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        System.out.println(calc("12*10"));
+        input();
+        System.out.println(calc(str));
+    }
+
+    private static void input() {
+        Scanner in = new Scanner(System.in);
+        str = in.next();
+        in.close();
     }
 
     static String numOrRoman;
